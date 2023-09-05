@@ -67,7 +67,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Documentagion',
+            label: 'Documentation',
           },
           {
             href: 'https://github.com/oxtaa/oxi.js',
@@ -84,7 +84,7 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: '/docs/',
+                to: '/docs/intro',
               },
             ],
           },
@@ -102,7 +102,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Made by OxiProjects • ${new Date().getFullYear()}`,
       },
       prism: {
         theme: lightCodeTheme,
