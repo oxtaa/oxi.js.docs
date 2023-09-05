@@ -51,7 +51,8 @@ function Feature({Svg, title, description}) {
 
 async function getVersion() {
   try {
-    return await axios.get('https://oxiapi.0xtag4.repl.co/json/npm?package=oxi.js').version
+    const res = await axios.get('https://oxiapi.0xtag4.repl.co/json/npm?package=oxi.js')
+    return res.data.version
   } catch (e) {
     return '';
   }
