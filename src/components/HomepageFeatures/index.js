@@ -53,7 +53,7 @@ async function getVersion() {
   try {
     return await axios.get('https://registry.npmjs.com')['dist-tags'].latest
   } catch (e) {
-    return 'N/A'
+    return 'N/A' + e.message
   }
 }
 
