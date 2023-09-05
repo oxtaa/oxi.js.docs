@@ -6,9 +6,8 @@ import axios from 'axios';
 const FeatureList = [
   {
     title: 'Latest version',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
-      <>
+      < style="font-size: 20;" >
         Fetching...
       </>
     ),
