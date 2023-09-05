@@ -1,8 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
-import fetch from 'node-fetch';
-let text = 'a'
+import axios from 'axios';
+
 const FeatureList = [
   {
     title: 'Latest version',
@@ -50,12 +50,9 @@ function Feature({Svg, title, description}) {
 }
 
 function getVersion() {
-  fetch('https://registry.npmjs.com')
+  axios.get('https://registry.npmjs.com')
   .then(data => {
-    return data.json()
-    .then(version => {
-    return version['dist-tags'].latest
-    })
+    return data['dist-tags'].latest;
   }).catch(e =>{
     return 'N/A'
   })
