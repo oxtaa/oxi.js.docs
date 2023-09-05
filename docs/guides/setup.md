@@ -7,24 +7,9 @@ sidebar_position: 1
 
 ## Installation
 
-<Tabs groupId="pref-install">
-  <TabItem value="npminstall" label="npm">
-
-  **NodeJS 16.9.0 or newer is required.**
-  ```bash
-  npm install oxi.js@latest
-  ```
-
-  </TabItem>
-  <TabItem value="yarninstall" label="yarn">
-
-  **NodeJS 16.9.0 or newer is required.**
-  ```bash
-  yarn add oxi.js
-  ```
-  
-  </TabItem>
-</Tabs>
+```bash
+npm i oxi.js@latest
+```
 
 ## Setup example
 
