@@ -3,7 +3,7 @@ sidebar_position: 13
 ---
 # $getPrefixVar
 
-> Returns current prefix value (if variable exists)
+> Returns current prefix value (if 'prefix' variable exists)
 
 ## Usage
 
