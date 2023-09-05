@@ -49,13 +49,12 @@ function Feature({Svg, title, description}) {
   );
 }
 
-function getVersion() {
-  axios.get('https://registry.npmjs.com')
-  .then(data => {
-    return data['dist-tags'].latest;
-  }).catch(e =>{
+async function getVersion() {
+  try {
+    return await axios.get('https://registry.npmjs.com')['dist-tags'].latest
+  } catch (e) {
     return 'N/A'
-  })
+  }
 }
 
 export default function HomepageFeatures() {
