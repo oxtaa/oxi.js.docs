@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 # Introduction
-<h1 style="font-size:30px">Welcome to the oxi.js Documentation</h1>
+<h1 style="font-size:40px">Welcome to the oxi.js Documentation</h1>
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
