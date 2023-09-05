@@ -52,7 +52,7 @@ module.exports = {
 }
 ```
 
-You can also have 2 or more commands in same file like this:
+You can also have 2 or more commands in the same file like this:
 
 ```javascript title="commands/util/multipleCommands.js"
 module.exports = [{
@@ -65,7 +65,7 @@ module.exports = [{
   name: "command2",
   aliases: ["cmd2"],
   code: `
-  This is a command example!
+  Hello again!
   `
 }]
 ```
