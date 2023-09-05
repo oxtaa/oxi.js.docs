@@ -9,7 +9,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        {fetchDownloads()}
+        {getVersion()}
       </>
     ),
   },
@@ -49,7 +49,7 @@ function Feature({Svg, title, description}) {
   );
 }
 
-async function getDownloads() {
+async function getVersion() {
   try {
     const data = await fetch('https://registry.npmjs.com');
     const version = await data.json();
