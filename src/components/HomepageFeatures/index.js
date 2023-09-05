@@ -9,7 +9,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        {getVersion()}
+        Fetching...
       </>
     ),
   },
@@ -58,6 +58,15 @@ async function getVersion() {
 }
 
 export default function HomepageFeatures() {
+  const [latestVersion, setLatestVersion] = useState('');
+
+  useEffect(() => {
+    getVersion().then((version) => {
+      setLatestVersion(version);
+    });
+  }, []);
+
+  FeatureList[0].description = latestVersion || 'N/A';
   return (
     <section className={styles.features}>
       <div className="container">
