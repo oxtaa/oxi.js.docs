@@ -26,3 +26,5 @@ client.command({
 
 :::note
 You'll need to attach something to your message, this function only supports images by the moment.
+
+![Example image](https://github.com/oxtaa/oxi.js.docs/static/images/exAttHeight.png?raw=true)
