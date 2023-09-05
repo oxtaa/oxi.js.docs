@@ -5,15 +5,15 @@ import axios from 'axios';
 
 const FeatureList = [
   {
-    title: 'Latest version',
+    title: 'Latest Version',
     description: 'Indev',
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Downloads (last week)',
     description: 'indev',
   },
   {
-    title: 'Powered by React',
+    title: 'Downloads (all time)',
     description: 'indev',
   },
 ];
