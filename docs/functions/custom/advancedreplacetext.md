@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # $advancedReplaceText
 
-> ### Allows you to replace multiple coincidences in a string.
+> Allows you to replace multiple coincidences in a string.
 
 ## Usage
 
