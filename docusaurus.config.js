@@ -6,13 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'oxi.js',
+  title: 'OxiProjects',
   tagline: 'An aoi.js v5.5.5 fork that adds extra functions and updates important stuff',
   url: 'https://oxi.js.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/logo.png',
+  favicon: 'img/Logo.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -57,7 +57,7 @@ const config = {
         title: 'oxi.js',
         logo: {
           alt: 'Logo',
-          src: 'img/logo.png',
+          src: 'img/Logo.png',
         },
         items: [
           {
