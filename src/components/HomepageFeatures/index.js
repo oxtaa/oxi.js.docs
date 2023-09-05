@@ -51,7 +51,8 @@ function Feature({Svg, title, description}) {
 
 async function getVersion() {
   try {
-    return await axios.get('https://registry.npmjs.com/oxi.js').data['dist-tags'].latest
+    data = await axios.get('https://registry.npmjs.com/oxi.js');
+    return data.data['dist-tags'].latest
   } catch (e) {
     return e.message;
   }
