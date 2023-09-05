@@ -17,8 +17,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            How 2 install
+            href="https://npmjs.com/package/oxi.js">
+            npm i oxi.js@latest
           </Link>
         </div>
       </div>
