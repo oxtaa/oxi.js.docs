@@ -53,7 +53,7 @@ async function getDownloads() {
   try {
     const data = await fetch('https://registry.npmjs.com');
     const version = await data.json();
-    return version.['dist-tags'].latest
+    return version['dist-tags'].latest
   } catch (e) {
     return 'N/A'
   }
