@@ -49,14 +49,16 @@ function Feature({Svg, title, description}) {
   );
 }
 
-async function getVersion() {
-  try {
-    const data = await fetch('https://registry.npmjs.com');
-    const version = await data.json();
+function getVersion() {
+  fetch('https://registry.npmjs.com')
+  .then(data => {
+    return data.json()
+    .then(version => {
     return version['dist-tags'].latest
-  } catch (e) {
+    })
+  }).catch(e =>{
     return 'N/A'
-  }
+  })
 }
 
 export default function HomepageFeatures() {
