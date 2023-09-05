@@ -7,7 +7,7 @@ const FeatureList = [
   {
     title: 'Latest version',
     description: (
-      < style="font-size: 20;" >
+      <>
         Fetching...
       </>
     ),
