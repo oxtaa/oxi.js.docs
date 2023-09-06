@@ -97,7 +97,7 @@ const config = {
         copyright: `Made by OxiProjects • ${new Date().getFullYear()}`,
       },
       prism: {
-        theme: darkCodeTheme,
+        theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),
