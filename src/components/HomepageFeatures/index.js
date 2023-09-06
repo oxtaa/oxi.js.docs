@@ -52,7 +52,7 @@ async function getVersion() {
   }
 }
 
-export default async function HomepageFeatures() {
+export default function HomepageFeatures() {
   const [latestVersion, setLatestVersion] = useState('N/A');
   const [downloadsAll, setDownloadsAll] = useState('N/A');
   const [downloadsLast, setDownloadsLast] = useState('N/A');
