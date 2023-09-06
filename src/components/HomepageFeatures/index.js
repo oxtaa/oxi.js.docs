@@ -6,7 +6,7 @@ import axios from 'axios';
 const FeatureList = [
   {
     title: 'Latest Version',
-	subtitle: undefined,
+	subtitle: '(stable)',
     description: 'Indev',
   },
   {
