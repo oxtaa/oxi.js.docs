@@ -27,7 +27,7 @@ function Feature({title, description, subtitle}) {
       <div className="text--center padding-horiz--md">
         <h1>{title}</h1>
 		<h3>{subtitle}</h3>
-        <p style="font-size:20px">{description}</p>
+        <p style={{font-size:20px}}>{description}</p>
       </div>
     </div>
   );
@@ -71,7 +71,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-	  <h1 style="font-size:35px;">Package Stats</h1>
+	  <h1 style={{font-size:35px;}}>Package Stats</h1>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
