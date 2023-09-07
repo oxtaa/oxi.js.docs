@@ -1,7 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import Button from '@mui/material';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -28,13 +27,13 @@ function HomepageHeader() {
           </Link>
         </div>
         <div className={styles.buttons}>
-          <Button
+          <Link
             style={{border:'1px black',borderRadius:'4px',backgroundColor:'#808080'}}
             
 variant="outlined"
             onClick={copyText}>
             npm install oxi.js
-          </Button>
+          </Link>
         </div>
       </div>
     </header>
