@@ -26,7 +26,8 @@ function HomepageHeader() {
           </Link>
       </div>
         <div>
-          <Link className="button-secondary" href="https://npmjs.com/package/oxi.js">NPM page</button>
+          <Link className="button-secondary" href="https://npmjs.com/package/oxi.js">
+            NPM page
           </Link>
       </div>
     </header>
