@@ -7,6 +7,10 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
 
+const copyText = () => {
+  navigator.clipboard.writeText(`npm install oxi.js`);
+}
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -17,8 +21,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            href="https://npmjs.com/package/oxi.js">
-            npm i oxi.js@latest
+            onClick={copyText}>
+            npm install oxi.js
           </Link>
         </div>
       </div>
