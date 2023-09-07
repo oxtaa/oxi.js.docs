@@ -60,18 +60,18 @@ export default function HomepageFeatures() {
   useEffect(() => {
     getVersion().then((data) => {
       setLatestVersion(data.version);
-	  setDownloadsAll(data.downloadsA);
-	  setDownloadsLast(data.downloadsLW);
+	    setDownloadsAll(data.downloadsA);
+	    setDownloadsLast(data.downloadsLW);
     });
   }, []);
 
   FeatureList[0].description = latestVersion || 'N/A';
-  FeatureList[1].description = downloadsAll || 'N/A';
-  FeatureList[2].description = downloadsLast || 'N/A';
+  FeatureList[2].description = downloadsAll || 'N/A';
+  FeatureList[1].description = downloadsLast || 'N/A';
   return (
     <section className={styles.features}>
       <div className="container">
-	  <h1 style={{fontSize:'35px'}}>Package Stats</h1>
+	  <h1 style={{fontSize:'35px',textAlign:'center'}}>Package Stats</h1>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
