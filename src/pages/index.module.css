@@ -22,3 +22,7 @@
   align-items: center;
   justify-content: center;
 }
+
+.button--custom {
+  background-color: #ff0000;
+}
