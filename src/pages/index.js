@@ -7,7 +7,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
 
-  const copyTextToClipboard = () => {
+  function copyText() {
     const text = "npm install oxi.js";
     navigator.clipboard.writeText(text)
   };
@@ -25,7 +25,7 @@ function HomepageHeader() {
           </Link>
         </div>
         <div className={styles.buttons}>
-          <Link className="button button--primary button--lg" o click={copyTextToClipboard()}>
+          <Link className="button button--primary button--lg" o click={copyText()}>
             npm install oxi.js
           </Link>
         </div>
