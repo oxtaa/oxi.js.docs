@@ -20,10 +20,11 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--primary button--lg"
+            className="button button--secondary button--lg"
             onClick={copyText}>
             npm install oxi.js
           </Link>
+          <Link className="button-secondary" href="https://npmjs.com/package/oxi.js">NPM page</Link>
         </div>
       </div>
     </header>
