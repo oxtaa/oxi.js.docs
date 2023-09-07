@@ -7,41 +7,10 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
 
-function CopyToClipboardButton() {
-  const [isCopied, setIsCopied] = useState(false);
-
   const copyTextToClipboard = () => {
     const text = "npm install oxi.js";
-    navigator.clipboard.writeText(text).then(
-      () => {
-        setIsCopied(true);
-        setTimeout(() => setIsCopied(false), 2000);
-      },
-      (err) => {
-        return;
-      }
-    );
+    navigator.clipboard.writeText(text)
   };
-
-  return (
-    <div className={styles.copyButtonWrapper}>
-      <div
-        className={styles.copyContent}
-        variant="contained"
-        color="primary"
-        size="large"
-      >
-        npm install oxi.js
-        <button
-          className={`${styles.copyIconButton}`}
-          onClick={copyTextToClipboard}
-          type="button"
-        >
-        </button>
-      </div>
-    </div>
-  );
-}
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -55,9 +24,11 @@ function HomepageHeader() {
             NPM page
           </Link>
         </div>
-        <div className={styles.copyButtonWrapper}>
-              <CopyToClipboardButton />
-            </div>
+        <div className={styles.buttons}>
+          <Link className="button button--primary button--lg" o click={copyTextToClipboard()}>
+            npm install oxi.js
+          </Link>
+        </div>
       </div>
     </header>
   );
