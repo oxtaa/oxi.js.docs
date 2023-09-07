@@ -22,16 +22,10 @@ function HomepageHeader() {
           <Link className="button button--secondary button--lg" href="https://npmjs.com/package/oxi.js">
             NPM page
           </Link>
-          <Link className="button button--secondary button--lg" href="https://github.com/oxtaa/oxi.js">
-            GitHub
-          </Link>
         </div>
         <div className={styles.buttons}>
-          <Link
-            style={{outline:"4px black"}}
-            className="button button--secondary button--lg"
-            onClick={copyText}>
-            npm install oxi.js
+          <Link className="button button--secondary button--lg" href="https://github.com/oxtaa/oxi.js">
+            GitHub
           </Link>
         </div>
       </div>
