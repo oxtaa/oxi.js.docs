@@ -24,8 +24,10 @@ function HomepageHeader() {
             onClick={copyText}>
             npm install oxi.js
           </Link>
-          <button className="button-secondary" href="https://npmjs.com/package/oxi.js">NPM page</button>
-        </div>
+      </div>
+        <div>
+          <Link className="button-secondary" href="https://npmjs.com/package/oxi.js">NPM page</button>
+          </Link>
       </div>
     </header>
   );
