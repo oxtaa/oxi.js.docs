@@ -33,7 +33,7 @@ function HomepageHeader() {
 variant="outlined"
             onClick={copyText}>
             npm install oxi.js
-          </Link>
+          </Button>
         </div>
       </div>
     </header>
