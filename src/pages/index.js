@@ -19,7 +19,7 @@ function HomepageHeader() {
         <h1 className="hero__title">{'oxi.js'}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" href="https://npmjs.com/package/oxi.js">
+          <Link className="button button--lg" style={{backgroundColor:'transpatent',border:'1px black',border-radius:'4px'}}  href="https://npmjs.com/package/oxi.js">
             NPM page
           </Link>
         </div>
