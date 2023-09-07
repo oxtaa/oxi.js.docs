@@ -17,8 +17,14 @@
 }
 
 .buttons {
-  padding: 4px 4px;
+  padding: 4px 4px 4px 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.button--terciary {
+  background-color: #808080;
+  border: 1px black;
+  border-radius: 4px
 }
