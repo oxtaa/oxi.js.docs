@@ -31,7 +31,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`home`}
+      title={`Home`}
       description="oxi.js - An aoi.js v5.5.5 fork that adds extra functions and updates important stuff">
       <HomepageHeader />
       <main>
