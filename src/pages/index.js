@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link className="button button--secondary button--lg" href="https://npmjs.com/package/oxi.js">
             NPM page
           </Link>
-          <Link style={{marginsRight:'10px'}} className="button button--secondary button--lg" to="/docs/intro">
+          <Link className="button button--secondary button--lg" to="/docs/intro">
             Docs
           </Link>
         </div>
