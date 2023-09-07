@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link className="button button--secondary button--lg" href="https://npmjs.com/package/oxi.js">
             NPM page
           </Link>
-          <Link className="button button--secondary button--lg" to="/docs/intro">
+          <Link style={{paddingLeft:'4px',paddingRight:'4px'}} className="button button--secondary button--lg" to="/docs/intro">
             Docs
           </Link>
         </div>
@@ -31,7 +31,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
+      title={`OxiProjects`}
       description="oxi.js - An aoi.js v5.5.5 fork that adds extra functions and updates important stuff">
       <HomepageHeader />
       <main>
