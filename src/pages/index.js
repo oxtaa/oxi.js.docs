@@ -24,7 +24,7 @@ function HomepageHeader() {
           </Link>
         </div>
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg bashCopy">
+          <Link className="button {styles.bashCopy} button--lg">
             npm install oxi.js
           </Link>
         </div>
