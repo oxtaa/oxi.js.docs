@@ -23,6 +23,22 @@
   justify-content: center;
 }
 
-.bashCopy {
-  background-color: #ff0000;
+.copyButtonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.copyContent {
+  display: flex;
+  align-items: center;
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--ifm-color-primary);
+  background-color: transparent;
+  padding: 0.5rem 3.5rem 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-primary);
+  position: relative;
 }
