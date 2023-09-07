@@ -24,7 +24,7 @@ function HomepageHeader() {
           </Link>
         </div>
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" href="https://github.com/oxtaa/oxi.js">
+          <Link className="button button--terciary button--lg" href="https://github.com/oxtaa/oxi.js">
             GitHub
           </Link>
         </div>
