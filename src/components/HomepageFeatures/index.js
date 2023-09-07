@@ -26,8 +26,8 @@ function Feature({title, description, subtitle}) {
     <div className={clsx('col col--4')}>
       <div className="text--center padding-horiz--md">
         <h2>{title}</h2>
-		<h3>{subtitle}</h3>
-        <p style={{fontSize:'20px',color:'blue',fontWeight:'bold'}}>{description}</p>
+		<p style={{fontSize:'15px'}}>{subtitle}</h3>
+        <p style={{fontSize:'20px',color:'light blue',fontWeight:'bold'}}>{description}</p>
       </div>
     </div>
   );
