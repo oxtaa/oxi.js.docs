@@ -7,8 +7,40 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
 
-const copyText = () => {
-  navigator.clipboard.writeText(`npm install oxi.js`);
+function CopyToClipboardButton() {
+  const [isCopied, setIsCopied] = useState(false);
+
+  const copyTextToClipboard = () => {
+    const text = "npm install oxi.js";
+    navigator.clipboard.writeText(text).then(
+      () => {
+        setIsCopied(true);
+        setTimeout(() => setIsCopied(false), 2000);
+      },
+      (err) => {
+        return;
+      }
+    );
+  };
+
+  return (
+    <div className={styles.copyButtonWrapper}>
+      <div
+        className={styles.copyContent}
+        variant="contained"
+        color="primary"
+        size="large"
+      >
+        npm install oxi.js
+        <button
+          className={`${styles.copyIconButton}`}
+          onClick={copyTextToClipboard}
+          type="button"
+        >
+        </button>
+      </div>
+    </div>
+  );
 }
 
 function HomepageHeader() {
@@ -23,11 +55,9 @@ function HomepageHeader() {
             NPM page
           </Link>
         </div>
-        <div className={styles.buttons}>
-          <Link className="button {styles.bashCopy} button--lg">
-            npm install oxi.js
-          </Link>
-        </div>
+        <div className={styles.copyButtonWrapper}>
+              <CopyToClipboardButton />
+            </div>
       </div>
     </header>
   );
