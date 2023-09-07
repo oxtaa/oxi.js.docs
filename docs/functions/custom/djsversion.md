@@ -1,6 +1,4 @@
----
-sidebar_position: 9
----
+
 # $djsVersion
 
 > Returns current discord.js version

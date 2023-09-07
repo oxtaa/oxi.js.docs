@@ -1,22 +1,22 @@
+# $setPrefixVar
 
-# $getPrefixVar
-
-> Returns current prefix value (if 'prefix' variable exists)
+> Changes the current prefix value to another (if 'prefix' variable exists)
 
 ## Usage
 
 ```php
-$getPrefixVar[guildID?]
+$setPrefixVar[value;guildID?]
 ```
 
 ## Example
 
 ```js
 client.command({
-  name: "prefix",
+  name: "set-prefix",
   code: `
-  Current prefix is: $getPrefixVar
-  ` // Will return, for example, '!'
+  Changed the prefix to '?'
+  $setPrefixVar[?]
+  `
 });
 ```
 

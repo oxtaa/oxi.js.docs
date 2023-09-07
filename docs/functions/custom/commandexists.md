@@ -1,6 +1,4 @@
----
-sidebar_position: 7
----
+
 # $commandExists
 
 > Checks if a command exists or not by its name

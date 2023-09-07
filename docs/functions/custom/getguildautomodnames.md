@@ -1,6 +1,4 @@
----
-sidebar_position: 12
----
+
 # $getGuildAutomodNames
 
 > This will return the automod rules of the current guild (if any)

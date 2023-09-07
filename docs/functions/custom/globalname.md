@@ -1,6 +1,4 @@
----
-sidebar_position: 14
----
+
 # $globalName
 
 > Will return current user's global name (aka as display name), if any

@@ -1,6 +1,4 @@
----
-sidebar_position: 8
----
+
 # $createAdvancedObject
 
 > Creates an object with a name, can be used multiple times

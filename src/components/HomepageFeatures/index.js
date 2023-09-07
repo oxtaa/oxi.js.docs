@@ -40,8 +40,8 @@ async function getVersion() {
 	const downloadsLW = await axios.get('https://api.npmjs.org/downloads/point/last-week/oxi.js');
     return {
 		version: version.data['dist-tags'].latest,
-		downloadsA:downloadsA.downloads.reduce((accumulator, currentValue) => accumulator + currentValue.downloads, 0),
-		downloadsLW: downloadsLW.downloads
+		downloadsA:downloadsA.data.downloads.reduce((accumulator, currentValue) => accumulator + currentValue.downloads, 0),
+		downloadsLW: downloadsLW.data.downloads
 	}
   } catch (e) {
     return {

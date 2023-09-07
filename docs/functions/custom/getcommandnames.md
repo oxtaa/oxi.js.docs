@@ -1,6 +1,4 @@
----
-sidebar_position: 11
----
+
 # $getCommandNames
 
 > Gets all command names for a specific type of command
