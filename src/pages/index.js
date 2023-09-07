@@ -27,9 +27,10 @@ function HomepageHeader() {
           </Link>
         </div>
         <div className={styles.buttons}>
-          <Link
+          <Button
             style={{border:'1px black',borderRadius:'4px',backgroundColor:'#808080'}}
-            className="button button--lg"
+            
+variant="outlined"
             onClick={copyText}>
             npm install oxi.js
           </Link>
